@@ -1,7 +1,6 @@
 import { useLayoutEffect, useRef } from 'react';
 import { useSelector } from "react-redux";
 import Filter from '../assets/icons/filter.svg';
-import '../css/main.css';
 import Article from './Article';
 import { Item } from './Item';
 

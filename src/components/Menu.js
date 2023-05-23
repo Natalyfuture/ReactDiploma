@@ -29,10 +29,10 @@ const Menu = () => {
             </div>
             <nav className="menu_nav">
                 <div className="menu_list">
-                    {menuList.map(({ name, svgName }) => (
+                    {menuList.map(({ name, svgName }, index) => (
                     <div 
                     key={name} 
-                    className={activeIndexMenu.name === name ? 'menu_item menu_item--active' : 'menu_item'}
+                    className={activeIndexMenu.name === index ? 'menu_item menu_item--active' : 'menu_item'}
                     onClick={() => selectionMenu(name)}
                     >
                         <div className="menu_item_icon">

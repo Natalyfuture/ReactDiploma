@@ -1,0 +1,223 @@
+@import 'mixins';
+
+.login_container{
+    position: relative;
+    width: 1440px;
+    background-color: #DEEBFB;
+    border-radius: 30px;
+    padding: 101px 0 248px 0;
+    margin: 0 auto;
+
+    @media (max-width: 1440px) {
+        width: 1140px;
+    } 
+
+    @media (max-width: 1200px) {
+        width: 1040px;
+    }  
+    
+    @media (max-width: 1090px) {
+        width: 750px;
+    } 
+    @media (max-width: 800px) {
+        width: 500px;
+    } 
+    @media (max-width: 550px) {
+        width: 458px;
+    } 
+    @media (max-width: 480px) {
+        width: 340px;
+    } 
+    @media (max-width: 360px) {
+        width: 300px;
+    } 
+    @media (max-width: 320px) {
+        width: 290px;
+    } 
+
+}
+.title{
+    width: 320px;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    margin: 0 auto;
+    &_wrapper{
+        position: relative;
+    }
+    &_drooling-face{
+        position: absolute;
+        top: 70px;
+        right:570px;
+        @media (max-width: 1440px ) {
+            right:419px;
+        }
+        @media (max-width: 1200px ) {
+            right:368px;
+        }
+        @media (max-width: 1090px ) {
+            right:221px;
+        }
+        @media (max-width: 800px ) {
+            right:90px;
+        }
+        @media (max-width: 550px) {
+            right:78px;
+        } 
+        @media (max-width: 480px) {
+            right:19px;
+        }
+        @media (max-width: 360px) {
+            display: none;
+        }
+    }
+}
+.form{
+    @include centerElementFlex;
+    &_container{
+        @include centerElementFlex;
+        width: 578px;
+        height: auto;
+        background: #FFFFFF;
+        border-radius: 35px;
+        padding: 97px 95px 47px 95px;
+        margin-top: 17px;
+        flex-direction: column;
+        @media (max-width: 800px ) {
+            width: 430px;
+        }
+        @media (max-width: 550px ) {
+            width: 375px;
+        }
+        @media (max-width: 480px ) {
+            width: 300px;
+        }
+        @media (max-width: 360px) {
+            width: 266px;
+        }
+    }
+}
+
+.button-form{
+    width: 163px;
+    height: 50px;
+    background: #2D9CDB;
+    border-radius: 15px;
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+   
+    &_container-form{
+        display: block;
+        width: 163px;
+        margin: 37px 0 auto;
+    }
+}
+.link{
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    text-align: center;
+    cursor: pointer;
+    &_wrapper{
+        width: 155px;
+        display: flex;
+        text-align: center;
+        margin: 10px 0 47px 0;
+    }
+}
+.img{
+    &_grapes{
+        position: absolute;
+        top: -70px;
+        left: -70px;
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+    
+    &_leaf{
+        position: absolute;
+        top: 0;
+        right: 0;
+        @media (max-width: 1090px) {
+            width: auto;
+        } 
+    }
+    &_orange{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &_bitten-apple{
+        width: 154px;
+        height: 151px;
+        position: absolute;
+        bottom: 100px;
+        left: 50px;
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+}
+.input{
+    width: 388px;
+    height: 50px;
+    box-sizing: border-box;
+    background: #F3F3F3;
+    border-radius: 15px;
+    margin-bottom: 37px;
+    @media (max-width: 1090px) {
+        width: 335px;
+    } 
+    @media (max-width: 550px) {
+        width: 280px;
+    } 
+    @media (max-width: 480px ) {
+        width: 265px;
+    }
+    @media (max-width: 360px ) {
+        width: 250px;
+    }
+    
+    
+    &_wrapper{
+        width: 389px;
+        height: 50px;
+        position:relative;
+        display: block;
+        margin-bottom: 40px;
+        @media (max-width: 1090px) {
+            width: 335px;
+        } 
+        @media (max-width: 550px) {
+            width: 290px;
+        } 
+        @media (max-width: 480px ) {
+            width: 265px;
+        }
+        @media (max-width: 360px ) {
+            width: 250px;
+        }
+        
+    }
+}
+.errors{
+    position: absolute;
+    font-size: 12px;
+    bottom: -35px;
+    left: 0;
+    color: red;
+}
+

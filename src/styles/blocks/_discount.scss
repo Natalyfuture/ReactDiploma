@@ -1,0 +1,62 @@
+.discount{
+    width: 259px;
+    height: 158px;
+    border-radius: 30px;
+    padding: 57px 0 31px 22px;
+    background-color: #AB97F3;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    @media (max-width: 1440px) {
+        width: 160px;
+        padding: 55px 0 31px 22px;
+    }
+    @media (max-width: 800px) {
+        margin-bottom: 10px;
+    }
+    &_text-title{
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 27px;
+        color: #FFFFFF;
+    }
+    &_text-p{
+        font-family: 'Spartan';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF; 
+    }
+}
+.burger{
+    position: absolute;
+    top: -40px;
+    right: -10px;
+    transform: rotate(-45deg);
+}
+.cheese{
+    position: absolute;
+    top: 60px;
+    right: -10px;
+}
+.bitten-apple{
+    position: absolute;
+    top: -40px;
+    left: 10px;
+}
+.fire{
+    position: absolute;
+    top: -30px;
+    right: 75px;
+}
+.orange_icon{
+    position: absolute;
+    width: 42px;
+    height: 44px;
+    box-sizing: border-box;
+    top: 20px;
+    right: 75px;
+}

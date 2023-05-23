@@ -1,0 +1,101 @@
+.lucknow_content{
+    width: 1121px;
+    height: 850px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 60px 10px 30px 16px;
+    box-sizing: border-box;
+    position: relative;
+    @media (max-width: 1440px ) {
+        width: 900px;
+    }
+    @media (max-width: 1200px ) {
+        width: 965px;         
+    }
+    @media (max-width: 1090px ) {
+        width: 715px;
+        height: 910px;
+    }
+    @media (max-width: 800px ) {
+        width: 450px;
+        height: 1095px;
+    }
+    @media (max-width: 550px ) {
+        width: 400px;
+        height: 1355px;
+    }
+   
+   
+    &-header{
+        width: 1040px;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1440px ) {
+            width: 825px;
+        }
+        @media (max-width: 1090px ) {
+            width: 660px;
+        }
+        @media (max-width: 800px ) {
+            width: 400px;
+           
+        }
+        @media (max-width: 550px ) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+       
+    }
+    &-title{
+        width: 320px;
+        height: 130px;
+        position: relative;
+        @media (max-width: 1090px ) {
+            width: 250x;
+            
+        }
+       
+    }
+    &-text{
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 65px;
+        text-align: left;
+        margin: 0;
+        @media (max-width: 550px ) {
+            text-align: center;
+        }
+    }
+}
+.container_fixed{
+    position: fixed;
+    top: 80px;
+    left: 140px;
+    right: 0;
+}
+.img_smile{
+    position: absolute;
+    bottom: 0;
+    right: 90px;
+    @media (max-width: 800px ) {
+        right: 25px;
+    }
+    @media (max-width: 550px ) {
+        right: 10px;
+    }
+   
+
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    width: 167px;
+    height: 50px;
+    cursor: pointer;
+    @media (max-width: 800px ) {
+       width: 158px;
+    }
+   
+}

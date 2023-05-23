@@ -1,0 +1,197 @@
+@import 'mixins';
+
+.menu{
+    @include centerElementFlex;
+    flex-direction: column;
+    width: 254px;
+    margin-top: 80px;
+    padding-top: 99px;
+    text-align: center;
+    @media (max-width: 1440px ) {
+        max-width: 235px;
+    }
+    @media (max-width: 1200px ) {
+        max-width: 825px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+    }
+    @media (max-width: 1090px ) {
+        max-width: 750px;
+        margin-right: 30px;
+       
+    }
+    @media (max-width: 800px ) {
+        flex-direction: column;
+        max-width: 510px;
+        margin-right: 30px;
+       
+    }
+        &_manager{
+            @include centerElementFlex;
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            margin-bottom: 13px;
+            &-name{
+                font-family: 'Spartan';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 57px;
+
+            }
+            &-wrapper{
+                margin-left: 47px;
+                
+            }
+        }
+        &_nav{
+            align-items: center;
+            justify-content: center;
+            @media (max-width: 1090px ) {
+                width: 260px;
+                margin: 0 50px;
+            }
+            @media (max-width: 800px ) {
+                width: 300px;
+                margin-right: 30px;
+               
+            }
+        }    
+        &_list{
+            @media (max-width: 1200px ) {
+                width: 250px;
+            }
+            @media (max-width: 1090px ) {
+                width: 200px;
+            }
+        } 
+        &_item{
+            @include centerElementFlex;
+            margin-bottom: 40px;
+            justify-content: left;
+            background: transparent;
+            width: 184px;
+            height: 44px;
+            border-radius: 15px;
+            padding: 0 10px ;
+            cursor: pointer;
+            &:last-of-type{
+                margin-bottom: 13px; 
+            }
+            @media (max-width: 1200px ) {
+                width: 245px;
+            }
+            &_icon{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 46px;
+                height: 44px;
+                background: #FFFFFF;;
+                border-radius: 15px;
+                margin-right: 45px;
+                @media (max-width: 1200px ) {
+                    margin-right: 70px;
+                }
+                .icon{
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 15px;
+                    &-home{
+                        stroke: #919191;
+                    }
+                    &-name{
+                    
+                    }
+                }
+            }
+            &--active{
+                background: #DF4545;
+                .menu_item_icon{
+                    background: #DF4545;
+                }
+                span{
+                    color: #FFFFFF
+                }
+                .icon-home{
+                    stroke: #FFFFFF;
+                }
+                .icon-menu{
+                    fill:#FFFFFF
+                }
+                .icon-trending{
+                    fill:#FFFFFF
+                }
+                .icon-setting{
+                    fill:#FFFFFF
+                }
+            }
+            
+        } 
+        &_title{
+            font-family: 'Spartan';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #919191;
+        }
+
+}
+
+.faster_delivery{
+    width: 188px;
+    height: 274px;
+    position: relative;
+    padding-top: 110px;
+   
+}
+
+.delivery{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    @media (max-width: 1090px ) {
+        right: -50px; 
+        top: 7px
+    }      
+}
+
+.square{
+    width: 184px;
+    height: 162px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    
+    &_content{
+        position: absolute;
+        top: 170px;
+        left: 26px;
+    }
+    &_title{
+        width: 88px;
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+}
+.know-more{
+    @include centerElementFlex;
+    width: 130px;
+    height: 11px;
+    &_text{
+        font-family: 'Spartan';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 11px;
+        margin-right: 56px;
+    }
+}
